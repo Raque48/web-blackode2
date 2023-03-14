@@ -13,15 +13,15 @@
 			enctype="multipart/form-data">
 			<div class="mb-3">
 				<label for="titulo" class="form-label">Titulo : </label> <input
-					type="text" id="titulo" placeholder="Digite el titulo"
+					type="text" id="titulo" placeholder="Escriba el titulo"
 					class="form-control" th:field="*{titulo}">
 				<div class="invalid-feedback" th:if="${#fields.hasErrors('titulo')}"
 					th:errors="*{titulo}"></div>
 			</div>
 
 			<div class="mb-3">
-				<label for="sinopsis" class="form-label">Sinopsis : </label>
-				<textarea id="sinopsis" placeholder="Digite la sinopsis"
+				<label for="sinopsis" class="form-label">Caracteristicas : </label>
+				<textarea id="sinopsis" placeholder="Escriba las caracteristicas"
 					class="form-control" th:field="*{sinopsis}"></textarea>
 				<div class="invalid-feedback"
 					th:if="${#fields.hasErrors('sinopsis')}" th:errors="*{sinopsis}"></div>
